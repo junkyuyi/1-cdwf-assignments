@@ -1,0 +1,22 @@
+/*CSS reset settings here*/
+*{
+	margin: 0px;
+ 	padding: 0px;
+ 	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#wrapper, #wrapper h1, #wrapper div, img{
+	margin: 0px auto;
+	display: block;
+	vertical-align: top;
+}
+#wrapper{
+	width: 500px;
+}
+h1{
+	text-align: center;
+}
+img{
+	padding: 1px;
+	height: 50px;
+	width: 180px;
+}
