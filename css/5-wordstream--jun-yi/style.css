@@ -1,0 +1,289 @@
+/*CSS reset settings here*/
+*{
+	margin: 0px;
+ 	padding: 0px;
+ 	font-family: arial;
+}
+div#wrapper{
+	width: 1200px;
+	min-height: 500px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+	div#header{
+		margin-bottom: 20px;
+	}
+		div#header img{
+			margin-top: 20px;
+		}
+		div#header h1{
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 30px;
+		}
+			div#header h1 span{
+				font-size: 1.1em;
+			}
+				div#header h1 span:first-child{
+					color: grey;
+				}
+				div#header h1 span:last-child{
+					color: blue;
+				}
+		div#header #nav{
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 400px;
+			margin-top: -22px;
+			padding-top: 10px;
+		}
+			div#nav ul{
+				background-color: #F8F8F8;
+				border: 1px solid #E2E2E2;
+				border-radius: 10px;
+				display: inline-block;
+				padding: 17px
+			}
+				div#nav ul li{
+					font-size: 0.8em;
+					color: #808082;
+					display: inline-block;
+					padding: 0px 10px;
+					border-right: 1px solid #9A9A9A;
+				}
+				div#nav ul li:last-child{
+					border-right: 0px;
+				}
+				
+			div#nav button{	
+				background: linear-gradient(#46C3FA, #157CBC);
+				color: white;
+				margin-left: 20px;
+				padding: 5px 20px;
+				border: 0px;
+				border-radius: 3px;
+			}
+	h2#banner{
+		color: white;
+		font-size: 1.4em;
+		background: linear-gradient(#2A6E99 0%, #137BC1 30%, #137BC1 70%, #2A6E99 100%);
+		padding: 15px 18px;
+	}
+	div#main{
+		padding: 15px;
+		overflow: hidden;
+		background: linear-gradient(#F7F7F7 0%, white 10%);
+	}
+		div#sidemenu{
+			vertical-align: top;
+			display: inline-block;
+			width: 280px;
+			min-height: 400px;
+			padding-top: 50px;
+		}
+			div#sidemenu h1{
+				color: #2A6E99;
+				margin-bottom: 20px;
+				font-size: 1.2em;
+			}
+			div#sidemenu h2{
+				color: #E55800;
+				margin-bottom: 3px;
+				font-size: 0.9em;
+			}
+			div#sidemenu p{
+				font-size: 0.9em;
+				margin-bottom: 20px;
+			}
+				div#sidemenu p span{
+					color: #2A6E99;
+				}
+			div#sidemenu button{
+				color: white;
+				font-size: 1em;
+				font-weight: 700;
+				display: block;
+				margin: 5px auto;
+				width: 280px;
+				padding: 5px;
+				border: 0px;
+				border-radius: 5px;
+			}
+			div#sidemenu button#sidebut1{
+				background: linear-gradient(#46C3FA, #157CBC);
+			}
+			div#sidemenu button#sidebut2{
+				background: linear-gradient(#F99F1B, #E96200);
+			}
+			div#sidemenu p.centertext{
+				text-align: center;
+			}
+			div#advertisement{
+				margin-top: 50px;
+			}
+				div#advertisement div#text{
+					background-image: url("left_content_ad.png");
+					background-repeat: no-repeat;
+    				background-position: left top;
+    				background-size: 280px;
+					margin-bottom: 200px;
+					min-height: 290px;
+					padding: 20px;
+					border: 1px solid grey;
+				}
+					div#advertisement div#text h1{
+						color: #2A6E99;
+						font-size: 1.3em;
+					}
+					div#advertisement div#text h3{
+						font-size: 1.0em;
+						font-weight: 600;
+						color: darkgrey;
+						margin-bottom: 20px;
+					}
+					div#advertisement div#text button{
+						color: white;
+						background: linear-gradient(#2A6E99, #137BC1);
+						font-size: 1.0em;
+						font-weight: 400;
+						display: block;
+						margin: 5px;
+						width: 220px;
+						padding: 5px;
+						border: 0px;
+						border-radius: 5px;
+					}
+
+		div#content{
+			vertical-align: top;
+			display: inline-block;
+			width: 850px;
+			min-height: 400px;
+			margin-left: 30px;
+		}
+			div#content_header{
+				border-bottom: 1px solid grey;
+				padding-bottom: 15px; 
+				margin-bottom: 20px;
+			}
+				div#content_header img#home_icon{
+					display: inline-block;
+					vertical-align: top;
+					margin-right: 20px;
+				}
+				div#content_header p{
+					display: inline-block;
+					vertical-align: top;
+					margin-top: 3px;
+					margin-right: 500px;
+					color: #157CBC;
+				}
+				div#content_header img#phone_icon{
+					display: inline-block;
+					vertical-align: top;
+					margin-top: 3px;
+					width: 25px;
+				}
+				div#content_header div{
+					display: inline-block;
+					vertical-align: top;
+					width: 100px;
+				}
+					div#content_header div#phone_number p{
+						display: inline-block;
+						vertical-align: top;
+						width: 220px;
+						color: grey;
+						font-size: 0.8em;
+					}
+					div#content_header div#phone_number h1{
+						display: inline-block;
+						vertical-align: top;
+						width: 220px;
+						color: #45B5EA;
+						font-size: 1.9em;
+
+					}
+			div#content_top{
+				min-height: 300px;
+			}
+				div#content_top h1{
+					color: #1279C2;
+					font-size: 1.3em;
+					margin-bottom: 25px;
+				}
+				div#content_top p{
+					font-size: 0.9em;
+					margin-bottom: 20px;
+				}
+				div#content_top ul{
+					margin-bottom: 40px;
+					color: #137BC1;
+				}
+					div#content_top ul li{
+						color: black;
+						font-size: 0.9em;
+						margin-bottom: 20px;
+						margin-left: 20px;
+						list-style-type: square;
+					}
+				div#content_top a{
+					color: #137BC1;
+				}
+				div#content_top span{
+					font-weight: 700;
+				}
+
+			div#content_middle{
+				border: 5px solid #8BBAD5;
+				padding: 7px;
+				margin-bottom: 20px;
+			}	
+				div#content_middle img{
+					vertical-align: top;
+				}	
+				div#content_middle_text{
+					display: inline-block;
+					vertical-align: top;
+					width: 700px;
+				}
+					div#content_middle_text h1{
+						color: #1279C2;
+						font-size: 1.3em;
+						margin-bottom: 5px;
+					}
+					div#content_middle_text p{
+						font-size: 1em;
+						margin-bottom: 20px;
+					}
+						div#content_middle_text p span{
+							font-weight: 700;
+						}
+					div#content_middle_text button{
+						width: 200px;
+						padding: 5px 20px;
+						color: white;
+						border-radius: 5px;
+						border: 2px solid #677F2B;
+						font-size: 1em;
+						font-weight: 700;
+						background: linear-gradient(#C7E06F, #90B10A, #C7E06F);
+					}
+
+/*			div#content_bottom{
+
+			}*/
+				div#content_bottom h2{
+					margin-bottom: 15px;
+					color: #1279C2;
+					font-size: 1.1em;
+				}
+				div#content_bottom p{
+					font-size: 0.9em;
+					margin-bottom: 20px;
+				}	
+					div#content_bottom p a{
+						color: #137BC1;
+					}
+
+

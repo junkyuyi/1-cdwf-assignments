@@ -1,0 +1,13 @@
+/*CSS reset settings here*/
+*{
+	margin: 0px;
+ 	padding: 0px;
+ 	font-family: Arial, Helvetica, sans-serif;
+ /*	outline: 1px dotted purple;*/
+}
+div .cc-front, div .cc-back{
+	width: 200px;
+	min-height: 100px;
+	text-align: center;
+	border: 1px solid black;
+}

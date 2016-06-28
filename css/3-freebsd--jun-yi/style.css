@@ -1,0 +1,133 @@
+/*CSS reset settings here*/
+*{
+	margin: 0px;
+ 	padding: 0px;
+ 	font-family: arial;
+}
+div#header-bg{
+	background-color: rgb(136,0,0);
+}
+	div#header{
+		min-height: 50px;
+		width: 920px;
+		margin: 0px auto;
+		padding: 5px 40px;
+	}
+		img#logo{
+			display: inline-block;
+		}
+		h1#motto{
+			width: 340px;
+			display: inline-block;
+			color: white;
+			vertical-align: top;
+			padding-top: 15px;
+		}
+		div#header-menu{
+			display: inline-block;
+			vertical-align: top;
+			font-size: 0.90em;
+		}
+			div#header-menu .nav-menu{
+				margin-bottom: 6px;
+				color: white;
+			}
+				div#header-menu .nav-menu *{
+					display: inline-block;
+				}
+				div#header-menu .nav-menu a{
+					padding: 0px 4px;
+					color: yellow;
+					text-decoration: underline;
+				}
+			div#search{
+				padding-left:75px;
+
+			}
+div#navigation-bg{
+	background-color: rgb(238,238,238);
+}
+	div#navigation{
+		min-height: 25px;
+		width: 990px;
+		margin: 0px auto;
+		padding: 5px;
+	}
+		div#navigation ul li{
+			display: inline-block;
+			margin-right: 12px;
+			font-size: 0.75em;
+			font-weight: 900;
+			color: grey;
+		}
+div#body{
+	width: 1000px;
+	margin: 0px auto;
+}
+	div#side{
+		width: 190px;
+		min-height: 500px;
+		vertical-align: top;
+		display: inline-block;
+		padding: 30px 10px 0px 30px;
+	}
+		div#sidemenu{
+			min-height: 50px;
+			background-color: rgb(238,238,238);
+		}
+			div#sidemenu ul{
+				padding: 15px 15px 15px 25px;
+			}
+				div#sidemenu ul li{
+					margin-bottom: 10px;
+					text-decoration: underline;
+					font-size: 0.9em;
+					color: rgb(136,0,0);
+				}
+				div#sidemenu a{
+					color: rgb(136,0,0);
+				}
+	div#main{
+		width: 700px;
+		min-height: 500px;
+		vertical-align: top;
+		display: inline-block;
+		padding-top: 25px;
+		padding-left: 10px;
+		padding-right: 50px;
+	}
+		div#main h1{
+			font-size: 1.5em;
+			font-weight: 900;
+			margin-bottom: 20px;
+			color: rgb(136,0,0);
+		}
+		div#main h2{
+			font-size: 0.9em;
+			font-weight: 900;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			color: rgb(136,0,0);
+		}
+		div#main p{
+			font-size: 0.9em;
+		}
+		div#main ul{
+			margin-left: 40px;
+		}
+		div#main ol{
+			margin-left: 40px;
+		}
+		div#main li{
+			font-size: 0.9em;
+		}
+		div#main a{
+			color: rgb(136,0,0);
+		}
+		div#main hr{
+			border: 1px solid grey;
+			margin-top: 3px;
+		}
+		div#main span{
+			font-weight: 800;
+		}

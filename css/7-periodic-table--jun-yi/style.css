@@ -1,0 +1,75 @@
+/*CSS reset settings here*/
+*{
+	margin: 0px;
+ 	padding: 0px;
+ 	font-family: arial;
+}
+#wrapper{
+	background-color: #EEEEEE;
+	margin: 20px auto;
+	width: 1530px;
+	padding: 20px;
+	min-height: 400px;
+}
+.row{
+	width: 1500px;
+	min-height: 100px; 
+}
+.space{
+	margin-top: 50px;
+}
+.lab *, .cel *{
+	display: block;
+	text-align: center;
+	margin-top: 3px;
+}
+.lab{
+	width: 74px;
+	height: 32px;
+	margin: 30px 2px 2px;
+	text-align: center;
+	font-size: 1.1em;
+	color: #FC0000;
+}
+.lab.lab2{
+	width: 188px;
+	padding-left: 30px;
+}
+.lab.lab3{
+	width: 15px;
+	text-align: right;
+}
+.cel{
+	width: 68px;
+	height: 88px;
+	padding: 2px;
+	margin: 2px;
+	border: 1px solid black;
+}
+p{
+	color: black;
+}
+h1{
+	font-size: 2.2em;
+	color: #1913A2;
+}
+
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+
+.rd{
+	background-color: #FD9A98;
+}
+.bl{
+	background-color: #689BFF;
+}
+.or{
+	background-color: #FECB00;
+}
+.gr{
+	background-color: #1FCA21;
+}

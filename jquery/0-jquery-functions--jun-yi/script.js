@@ -14,6 +14,39 @@ $(document).ready(function(){
     		blue = true;
     	}
     });
+
+    // FOCUS STUFF
+    $("#focus .input-1").focus( function(){
+        $("#focus .span-1").css("display","inline").fadeOut(2000);
+
+    });
+    $("#focus .input-2").focus( function(){
+        $("#focus .span-2").css("display","inline").fadeOut(2000);
+
+    });
+
+    // HTML TEXT
+    $("#text-html #txt-btn").click(function(){
+        $("#text-html p").text("<h3>New Paragraph</h3>");
+    });
+    $("#text-html #html-btn").click(function(){
+        $("#text-html p").html("<h3>New Paragraph</h3>");
+    });
+
+    $("#data button").click(function(){
+        $("#data p").data("custom-attr", {a:1, b:2, c:3});
+        console.log($("#data p").data("custom-attr").a);
+        console.log($("#data p").data("custom-attr").b);
+        console.log($("#data p").data("custom-attr").c);
+    });
+
+
+    // VAL stuff
+    $("#val button").click(function(){
+        $("#val .input-2").val( $("#val .input-1").val() );
+    });    
+
+    $
     //AFTER STUFF
     $("#after button").click(function(){
     	$("#after-divs .square-div").text(""); // clears text in case user clicks button multiple times
@@ -51,11 +84,59 @@ $(document).ready(function(){
     });
 
 
-    //SLIDETOGGLE STUFF
-    $("#slideToggle button").click(function(){
-    	 $("#slideToggle div:last-child").slideToggle("fast");
+    //BEFORE/AFTER STUFF
+    var num = 0;
+    $("#before-after .btn-1").click(function(){
+        num++;
+         $("#before-after p#origin").before("<p>BEFORE: " + num  + "</p>");
+    });
+    $("#before-after .btn-2").click(function(){
+        num++;
+         $("#before-after p#origin").after("<p>AFTER " + num  + "</p>");
     });
 
+    //APPEND STUFF
+    var paragraph = $("#append p").text();
+    $("#append .btn").click(function(){
+         $("#append p").append(paragraph);
+    });
 
+    //SHOW HIDE TOGGLE
+    $("#sht .btn-1").click(function(){
+         $("#sht img").show(4000);
+    });
 
+    $("#sht .btn-2").click(function(){
+         $("#sht img").hide(4000);
+    });
+
+    $("#sht .btn-3").click(function(){
+         $("#sht img").toggle(4000);
+    });
+
+    //SLIDE
+    $("#fade .btn-1").click(function(){
+         $("#fade img").fadeIn(4000);
+    });
+
+    $("#fade .btn-2").click(function(){
+         $("#fade img").fadeOut(4000);
+    });
+
+    $("#fade .btn-3").click(function(){
+         $("#fade img").fadeToggle(4000);
+    });
+
+    //SLIDE
+    $("#slide .btn-1").click(function(){
+         $("#slide img").slideDown(4000);
+    });
+
+    $("#slide .btn-2").click(function(){
+         $("#slide img").slideUp(4000);
+    });
+
+    $("#slide .btn-3").click(function(){
+    	 $("#slide img").slideToggle(4000);
+    });
 });

@@ -2,62 +2,137 @@
 <html lang="en">
     <head>
         <title>jQuery Functions (by Jun Yi)</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- JQUERY -->
         <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-theme.min.css">
+        <script src="bootstrap/bootstrap.min.js"></script>
+        <!-- personal -->
+        <link rel="stylesheet" type="text/css" href="style.css">
         <script type="text/javascript" src="script.js"></script>
     </head><!-- End of Head -->
 
     <body>
-        <div id="add-class">
-            <h1>.addClass</h1>
-            <button>Click to change the color</button>
-            <h2> Check out the color change on this bad boy!</h2>
-        </div>
-        <div id="after">
-            <h1>.after (&amp; .append)</h1>
-            <button>Click to observe ".add"</button>
-            <div id="after-divs">
-                <div class="bg-color-grey square-div after1"></div>
-                <div class="bg-color-grey square-div after2"></div>
-                <div class="bg-color-grey square-div after3"></div>
+        <h1>.addClass</h1>
+        <p>Click on the button to see the color of the text change</p>
+        <div id="add-class" class="row">
+            <div class="col-md-2">
+                <button class="btn btn-primary">Change Color</button>
+            </div>
+            <div class="col-md-10">
+                <h2> Check out the color change on this bad boy!</h2>
             </div>
         </div>
-        <div id="append">
-            <h1>.append</h1>
-            <button>Click to append stuff</button>
-            <h2>Jun is ???</h2>
-        </div>
-        <div id="attr">
-            <h1>.attr</h1>
-            <button>Click to see attribute</button>
-            <h2>This <a href="google.com">link</a>'s href is... (See console log)</h2>
-        </div>
 
-
-        <h1>.before</h1><hr>
-        <h1>.html</h1><hr>
-        <h1>.text</h1><hr>
-        <h1>.val</h1><hr>
-        <h1>..toggle</h1><hr>
-        <h1>.hide</h1><hr>
-        <h1>.show</h1><hr>
-        <h1>.slideDown</h1><hr>
-        <div id="slideToggle">
-            <h1>.slideToggle</h1>
-            <button>Click to see slide toggle in action</button>
-            <div></div>
-            <div class="bg-color-grey square-div"></div>
-            <div class="bg-color-grey square-div"></div>
-            <div class="bg-color-grey square-div"></div>
+        <h1>.focus</h1>
+        <p>Click on the field see stuff happen when "focused</p>
+        <div id="focus" class="row">
+            <form>
+                <div class="col-md-3">
+                    Name<input class="input-1" type="text" name="name" placeholder="name">
+                </div>
+                <div class="col-md-3">
+                    <span class="span-1">Input Name</span>
+                </div>
+                <div class="col-md-3">
+                    Email<input class="input-2" type="text" name="email" placeholder="name">
+                </div>
+                <div class="col-md-3">
+                    <span class="span-2">Input Email</span>
+                </div>
+            </form>
         </div>
 
-        <h1>.slideUp</h1><hr>
-        <h1>.fadeOut</h1><hr>
-        <h1>.fadeIn</h1><hr>
-        <h1>.focus</h1><hr>
-        <h1>.click</h1>
-        <h2> You've been clicking all throughout the site!!</h2>
+        <h1>.val</h1>
+        <p>Input something in the first field and click "Clone" to see it get copied</p>
+        <div id="val" class="row">
+            <button>Clone</button>    
+            <form>
+                Input<input class="input-1" type="text" name="name" placeholder="name">
+                Clone<input class="input-2" type="text" name="email" placeholder="name">
+            </form>
+        </div>
+
+        <h1>.html vs. .text</h1>
+        <div id="text-html" class="row">
+            <button id="txt-btn">text</button>
+            <button id="html-btn">html</button>    
+            <p>Paragraph here</p>
+        </div>
+       
         <h1>.data</h1>
+        <div id="data" class="row">
+            <button id="data">Add data</button>  
+            <p>Paragraph here</p>
+        </div>
+
+        <h1>Before/After</h1>
+        <div id="before-after" class="row">
+            <div class="col-md-2">
+                <button class="btn btn-primary btn-1">Before</button>
+                <button class="btn btn-primary btn-2">After</button>
+            </div>
+            <div class="col-md-10">
+                <p id="origin">Messsage</p>
+            </div>
+        </div>
+
+        <h1>Append</h1>
+        <div id="append" class="row">
+            <div class="col-md-2">
+                <button class="btn btn-primary btn-1">Append</button>
+            </div>
+            <div class="col-md-10">
+                <p>Click the button to append a new paragraph.</p>
+            </div>
+        </div>
+
+        <h1>Show/Hide/Toggle</h1>
+        <div id="sht" class="row">
+            <div class="col-md-2">
+                <button class="btn btn-primary btn-1">Show</button>
+                <button class="btn btn-primary btn-2">Hide</button>
+                <button class="btn btn-primary btn-3">Toggle</button>
+            </div>
+            <div class="col-md-2">
+                <p>Click on the button to show and hide</p>
+            </div>
+            <div class="col-md-8">
+                <img src="mario.png">
+            </div>
+        </div>
+        
+        <h1>Fade</h1>
+        <div id="fade" class="row">
+            <div class="col-md-2">
+                <button class="btn btn-primary btn-1">Fade In</button>
+                <button class="btn btn-primary btn-2">Fade Out</button>
+                <button class="btn btn-primary btn-3">Fade Toggle</button>
+            </div>
+            <div class="col-md-2">
+                <p>Click on the button to fade in and out</p>
+            </div>
+            <div class="col-md-8">
+                <img src="mario.png">
+            </div>
+        </div>
+        
+        <h1>Slide</h1>
+        <div id="slide" class="row">
+            <div class="col-md-2">
+                <button class="btn btn-primary btn-1">Slide Up</button>
+                <button class="btn btn-primary btn-2">Slide Down</button>
+                <button class="btn btn-primary btn-3">Slide Toggle</button>
+            </div>
+            <div class="col-md-2">
+                <p>click on the button to slide up and down</p>
+            </div>
+            <div class="col-md-8">
+                <img src="mario.png">
+            </div>
+        </div>
+        
 
     </body><!-- End of Body -->
 </html>
